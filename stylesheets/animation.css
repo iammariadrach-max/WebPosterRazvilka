@@ -1,0 +1,14 @@
+.circle.anim {
+  animation: circle 2s ease forwards;
+}
+
+@keyframes circle {
+  0% {
+    background-color: #aef261;
+    border-color: #83bf3f;
+  }
+  100% {
+    background-color: transparent;
+    border-color: transparent;
+  }
+}

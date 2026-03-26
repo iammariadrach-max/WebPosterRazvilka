@@ -1,0 +1,243 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  display: block;
+  font-family: 'Akzidenz-Grotesk Pro';
+  background-color: black;
+  position: relative;
+}
+
+/* body::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url('../images/maket.svg');
+  width: 100vw;
+  height: 375vw;
+  opacity: 0.2;
+} */
+/* 1 секция */
+.mascot {
+  display: flex;
+  width: 100%;
+  height: 55vw;
+  position: relative;
+  padding: 3%;
+}
+.navigation {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: #aef261;
+  font-size: 1.64vw;
+  font-weight: 400;
+  font-style: normal;
+}
+.scrollText {
+  flex-direction: column;
+  line-height: 2.2vw;
+}
+
+.suitcase {
+  position: absolute;
+  width: 60%;
+  height: 75%;
+  top: 7%;
+  left: 50%; /* центрируем по X */
+  transform: translateX(-50%); /* центр по середине */
+  background: transparent;
+  will-change: transform;
+}
+
+.logo {
+  position: absolute;
+  width: 60.4vw;
+  top: 20vw;
+  left: 16vw;
+}
+
+/* 2 секция */
+.typedText {
+  width: 100%;
+  display: flex;
+  height: 41vw;
+  padding: 3%;
+}
+.twoColums {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  color: #aef261;
+  font-size: 1.8vw;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 2.5vw;
+}
+.firstColumn {
+  width: 15.4vw;
+}
+.secondColumn {
+  width: 15.4vw;
+}
+
+/* 3 секция */
+.India {
+  width: 100%;
+  height: 57vw;
+  position: relative;
+  background-color: #eb8ffc;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.India.cover {
+  background-image: url(../images/indiaMap.svg);
+}
+.circles {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.circle {
+  background-color: #aef261;
+  border-radius: 50%;
+  width: 4.25vw;
+  height: 4.25vw;
+  border: 0.15vw solid #83bf3f;
+  position: absolute;
+  transition: all ease 2s;
+}
+.buttonCircles {
+  /* padding: 2vw 1vw; */
+  background-color: black;
+  width: 16%;
+  height: 6%;
+  position: relative;
+  z-index: 2;
+  border-radius: 2vw;
+  color: white;
+  font-size: 1.7vw;
+  line-height: 3.3vw;
+  text-align: center;
+}
+.attractions {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.attractions > div,
+.attractions > img {
+  position: absolute;
+}
+.city,
+.buttonCircles {
+  cursor: pointer;
+  user-select: none;
+}
+.city {
+  background-color: black;
+  width: 12%;
+  height: 6%;
+  color: white;
+  border-radius: 2vw;
+  line-height: 3.3vw;
+  text-align: center;
+  font-size: 1.7vw;
+  display: none;
+  /* display: block; */
+}
+.varanasi {
+  top: 33%;
+  left: 53.5%;
+}
+.howrahBridge {
+  top: 42%;
+  left: 58%;
+}
+.nandi {
+  top: 78%;
+  left: 49%;
+}
+.minkshiTemple {
+  top: 85%;
+  left: 35%;
+}
+.hawaMahal {
+  top: 42%;
+  left: 22%;
+}
+.tajMahal {
+  top: 30%;
+  left: 60%;
+}
+.varanasiImg {
+  width: 10%;
+  position: absolute;
+  top: 2%;
+  left: 66%;
+}
+.howrahBridgeImg {
+  width: 10%;
+  position: absolute;
+  top: 44%;
+  left: 80%;
+}
+
+.minkshiTempleImg {
+  width: 10%;
+  position: absolute;
+  top: 65%;
+  left: 17%;
+}
+.hawaMahalImg {
+  width: 10%;
+  position: absolute;
+  top: 29%;
+  left: 11%;
+}
+.tajMahalImg {
+  width: 10%;
+  position: absolute;
+  top: 6%;
+  left: 27%;
+}
+.nandiImg {
+  width: 10%;
+  position: absolute;
+  top: 73%;
+  left: 58%;
+}
+
+/* 4 секция */
+
+.Egypt {
+  width: 100%;
+  height: 57vw;
+  position: relative;
+  background-color: #ff801f;
+}
+.video-container {
+  width: 80%;
+  max-width: 100%;
+  margin: 0 auto;
+  position: relative;
+  padding-top: 43.25%;
+}
+
+.video-container video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.none {
+  display: none;
+}
