@@ -114,7 +114,6 @@ body {
   transition: all ease 2s;
 }
 .buttonCircles {
-  /* padding: 2vw 1vw; */
   background-color: black;
   width: 16%;
   height: 6%;
@@ -142,98 +141,119 @@ body {
 }
 .city {
   background-color: black;
-  width: 12%;
-  height: 6%;
   color: white;
   border-radius: 2vw;
   line-height: 3.3vw;
   text-align: center;
   font-size: 1.7vw;
   display: none;
-  /* display: block; */
 }
 .varanasi {
   top: 33%;
-  left: 53.5%;
+  left: 56%;
+  width: 10%;
+  height: 6%;
 }
 .howrahBridge {
-  top: 42%;
-  left: 58%;
+  top: 45%;
+  left: 59%;
+  width: 12%;
+  height: 6%;
 }
 .nandi {
-  top: 78%;
-  left: 49%;
+  top: 75%;
+  left: 51%;
+  width: 8%;
+  height: 6%;
 }
 .minkshiTemple {
-  top: 85%;
+  top: 82%;
   left: 35%;
+  width: 14%;
+  height: 6%;
 }
 .hawaMahal {
   top: 42%;
-  left: 22%;
+  left: 25%;
+  width: 12%;
+  height: 6%;
 }
 .tajMahal {
-  top: 30%;
-  left: 60%;
+  top: 24%;
+  left: 37%;
+  width: 12%;
+  height: 6%;
 }
 .varanasiImg {
   width: 10%;
   position: absolute;
-  top: 2%;
-  left: 66%;
+  top: 7%;
+  left: 68%;
 }
 .howrahBridgeImg {
   width: 10%;
   position: absolute;
-  top: 44%;
-  left: 80%;
+  top: 43.7%;
+  left: 77.5%;
 }
 
 .minkshiTempleImg {
   width: 10%;
   position: absolute;
-  top: 65%;
-  left: 17%;
+  top: 70%;
+  left: 22%;
 }
 .hawaMahalImg {
   width: 10%;
   position: absolute;
-  top: 29%;
-  left: 11%;
+  top: 34.5%;
+  left: 11.5%;
 }
 .tajMahalImg {
   width: 10%;
   position: absolute;
-  top: 6%;
-  left: 27%;
+  top: 6.7%;
+  left: 23.6%;
 }
 .nandiImg {
   width: 10%;
   position: absolute;
   top: 73%;
-  left: 58%;
+  left: 61%;
 }
 
 /* 4 секция */
 
 .Egypt {
   width: 100%;
-  height: 57vw;
+  height: 62vw;
   position: relative;
   background-color: #ff801f;
+  display: flex;
+  padding: 0 3% 3% 3%;
+}
+.egyptText {
+  color: #aef261;
+  /* font-size: 2.9vw; */
+  font-size: 3.5vw;
+  line-height: 3.6vw;
+  text-align: center;
+  align-self: flex-end;
+  text-transform: uppercase;
+  text-align: left;
 }
 .video-container {
-  width: 80%;
+  width: 90%;
   max-width: 100%;
   margin: 0 auto;
-  position: relative;
-  padding-top: 43.25%;
+  position: absolute;
+  padding-top: 54%;
 }
 
 .video-container video {
   position: absolute;
   top: 0;
-  left: 0;
+  left: 2%;
   width: 100%;
   height: 100%;
 }
