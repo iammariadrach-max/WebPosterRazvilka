@@ -27,11 +27,11 @@
       }
     </script>
 
-    <!-- <script src="https://unpkg.com/three@0.139.0/build/three.min.js"></script>
-    <script src="https://unpkg.com/three@0.139.0/examples/jsm/loaders/GLTFLoader.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
     <script type="module" src="javascripts/model.js"></script>
     <script defer src="javascripts/India.js"></script>
+    <script defer src="javascripts/typed.js"></script>
   </head>
   <body>
     <!-- 1 секция -->
@@ -51,27 +51,14 @@
     <section class="typedText">
       <div class="twoColums">
         <div class="firstColumn">
-          <p class="firstText">
-            Вы отправляетесь путешествовать по&nbsp;трём странам:
-            <span class="indiaGap">Индии</span>,
-            <span class="egyptGap">Египту</span> и&nbsp;Китаю.
-            <span class="chinaGap">Рядом</span> с&nbsp;вами маскот бренда —
-            <span class="maskotGap">говорящий</span> чемодан, который
-            внимательно следит за&nbsp;вашими вещами и&nbsp;помогает
-            в&nbsp;<span class="WorldGap">дороге</span>.
-          </p>
+          <p id="typed-output-1" class="firstText"></p>
         </div>
+
         <div class="secondColumn">
-          <p class="secondText">
-            В каждой стране вас ждут новые открытия. Вы&nbsp;будете сами строить
-            маршрут, <span class="lineGap">узнавать</span> интересные факты
-            о&nbsp;<span class="vaseGap">культуре</span> и&nbsp;шаг
-            за&nbsp;шагом открывать для&nbsp;себя
-            <span class="world2Gap">мир</span>, собирая яркие
-            <span class="sunGap">впечатления</span>.
-          </p>
+          <p id="typed-output-2" class="secondText"></p>
         </div>
       </div>
+
       <div class="stickers">
         <img
           src="images/typedTextIndia.svg"
