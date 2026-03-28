@@ -56,7 +56,7 @@ body {
   position: absolute;
   width: 60.4vw;
   top: 20vw;
-  left: 16vw;
+  left: 19.8vw;
 }
 
 /* 2 секция */
@@ -64,7 +64,8 @@ body {
   width: 100%;
   display: flex;
   height: 41vw;
-  padding: 3%;
+  padding: 0 3% 3% 3%;
+  position: relative;
 }
 .twoColums {
   width: 100%;
@@ -77,12 +78,100 @@ body {
   line-height: 2.5vw;
 }
 .firstColumn {
-  width: 15.4vw;
+  width: 17%;
 }
 .secondColumn {
-  width: 15.4vw;
+  width: 16%;
 }
+.secondColumn p {
+  text-align: right;
+}
+/* span */
+.indiaGap {
+  margin-right: 25%;
+}
+.egyptGap {
+  margin-right: 17%;
+}
+.chinaGap {
+  margin-left: 25%;
+}
+.maskotGap {
+  margin-right: 25%;
+}
+.WorldGap {
+  margin-right: 22%;
+}
+/* 2 текст span */
+.lineGap {
+  margin-left: 22%;
+}
+.vaseGap {
+  margin-right: 27%;
+}
+.world2Gap {
+  margin-right: 23%;
+}
+.sunGap {
+  margin-left: 22%;
+}
+/* стикеры */
 
+.typedTextIndia {
+  top: 7.5vw;
+  left: 8.8vw;
+  position: absolute;
+  width: 3vw;
+}
+.typedTextEgypt {
+  top: 10vw;
+  left: 8.6vw;
+  position: absolute;
+  width: 2.7vw;
+}
+.typedTextChina {
+  top: 12.5vw;
+  left: 3vw;
+  position: absolute;
+  width: 3.4vw;
+}
+.typedTextMaskot {
+  top: 17vw;
+  left: 12vw;
+  position: absolute;
+  width: 4.7vw;
+}
+.typedTextWorld {
+  top: 29.6vw;
+  left: 10.2vw;
+  position: absolute;
+  width: 3.2vw;
+}
+/* стикеры 2 текста */
+.typedTextLine {
+  top: 13.5vw;
+  left: 84vw;
+  position: absolute;
+  width: 5vw;
+}
+.typedTextVase {
+  top: 17.5vw;
+  left: 93.5vw;
+  position: absolute;
+  width: 4vw;
+}
+.typedTextWorld2 {
+  top: 24.6vw;
+  left: 93.3vw;
+  position: absolute;
+  width: 3.2vw;
+}
+.typedTextSun {
+  top: 5vw;
+  left: 86vw;
+  position: absolute;
+  width: 3vw;
+}
 /* 3 секция */
 .India {
   width: 100%;
@@ -96,6 +185,8 @@ body {
 }
 .India.cover {
   background-image: url(../images/indiaMap.svg);
+  width: 100%;
+  background-size: cover;
 }
 .circles {
   width: 100%;
@@ -196,7 +287,6 @@ body {
   top: 43.7%;
   left: 77.5%;
 }
-
 .minkshiTempleImg {
   width: 10%;
   position: absolute;
@@ -253,7 +343,7 @@ body {
 .video-container video {
   position: absolute;
   top: 0;
-  left: 2%;
+  left: 1.8%;
   width: 100%;
   height: 100%;
 }
