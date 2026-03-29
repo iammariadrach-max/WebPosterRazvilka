@@ -18,7 +18,7 @@ function initThree() {
     3000
   )
 
-  camera.position.set(0, 5, 15)
+  camera.position.set(-3, 3, 15)
   camera.lookAt(0, 0, 0)
 
   const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true })
