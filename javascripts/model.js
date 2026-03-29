@@ -94,7 +94,6 @@ function initThree() {
 
     const isMobile = window.innerWidth < 768
 
-    // const rotationMultiplier = isMobile ? 2 : 6
     const rotationMultiplier = isMobile ? 14 : 28
 
     if (pivot) {

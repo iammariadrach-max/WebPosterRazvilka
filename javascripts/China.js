@@ -4,20 +4,20 @@ function coords() {
   const x = document.querySelector('.XCoord')
   const y = document.querySelector('.YCoord')
 
-  document.addEventListener('mousemove', (event) => {
-    x.innerHTML = `X: ${event.pageX}`
-    y.innerHTML = `Y: ${event.pageY}`
+  document.addEventListener('pointermove', (event) => {
+    x.innerHTML = `X: ${event.clientX}`
+    y.innerHTML = `Y: ${event.clientY}`
   })
 }
 
 const state = {
-  mouseDown: false,
+  isDown: false,
   currentCircle: 0,
   linesShow: [false, false, false, false, false, false]
 }
 
 function resetState() {
-  state.mouseDown = false
+  state.isDown = false
   state.currentCircle = 0
 }
 
@@ -40,13 +40,16 @@ document.addEventListener('DOMContentLoaded', () => {
 })
 
 function initDocument() {
-  document.addEventListener('mousemove', (e) => {
-    if (state.mouseDown) {
+  document.addEventListener('pointermove', (e) => {
+    if (state.isDown) {
       drawLine(e)
     }
   })
 
-  document.addEventListener('mouseup', () => {
+  document.addEventListener('pointerup', (e) => {
+    if (!state.isDown) return
+
+    handleConnection(e)
     resetState()
     eraseLine()
   })
@@ -69,37 +72,50 @@ function initCircle(circleElement) {
   circleElement.style.top = `${getRandomArbitrary(0, ch - height)}px`
   circleElement.style.left = `${getRandomArbitrary(0, cw - width)}px`
 
-  circleElement.addEventListener('mousedown', (e) => {
-    state.mouseDown = true
+  circleElement.addEventListener('pointerdown', (e) => {
+    state.isDown = true
     state.currentCircle = Number(e.target.id.split('_')[1])
   })
+}
 
-  circleElement.addEventListener('mouseup', (e) => {
-    const targetCircle = Number(e.target.id.split('_')[1])
+function handleConnection(e) {
+  const container = document.querySelector('.numbers')
+  const parentRect = container.getBoundingClientRect()
 
-    if (state.currentCircle + 1 === targetCircle) {
-      state.linesShow[state.currentCircle - 1] = true
-    }
+  const x = e.clientX - parentRect.left
+  const y = e.clientY - parentRect.top
 
-    if (state.currentCircle - 1 === targetCircle) {
-      state.linesShow[state.currentCircle - 2] = true
-    }
-    if (
-      state.linesShow[0] &&
-      state.linesShow[1] &&
-      state.linesShow[2] &&
-      state.linesShow[3] &&
-      state.linesShow[4] &&
-      state.linesShow[5]
-    ) {
-      const circlesBlink = document.querySelectorAll('.number-circle')
-      circlesBlink.forEach((circleBlink) => {
-        circleBlink.classList.add('circle-blink')
-      })
-    }
+  const current = state.currentCircle
 
-    resetState()
-  })
+  const nextCircle = document.getElementById(`circle_${current + 1}`)
+  const prevCircle = document.getElementById(`circle_${current - 1}`)
+
+  function isNear(circle) {
+    if (!circle) return false
+
+    const rect = circle.getBoundingClientRect()
+
+    const cx = rect.left - parentRect.left + rect.width / 2
+    const cy = rect.top - parentRect.top + rect.height / 2
+
+    const dist = calcDistance(x, y, cx, cy)
+
+    return dist < rect.width * 1.3
+  }
+
+  if (isNear(nextCircle)) {
+    state.linesShow[current - 1] = true
+  }
+
+  if (isNear(prevCircle)) {
+    state.linesShow[current - 2] = true
+  }
+
+  if (state.linesShow.every(Boolean)) {
+    document.querySelectorAll('.number-circle').forEach((c) => {
+      c.classList.add('circle-blink')
+    })
+  }
 }
 
 function drawLine(e) {
@@ -107,7 +123,6 @@ function drawLine(e) {
   const parentRect = container.getBoundingClientRect()
 
   const currentCircle = document.getElementById(`circle_${state.currentCircle}`)
-
   if (!currentCircle) return
 
   const rect = currentCircle.getBoundingClientRect()

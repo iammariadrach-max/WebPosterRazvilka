@@ -27,7 +27,7 @@ tl.fromTo(
 tl.to(
   '.text-block',
   {
-    top: '30%',
+    top: '40%',
     left: '50%',
     right: 'auto',
     transform: 'translate(-50%, -50%)',

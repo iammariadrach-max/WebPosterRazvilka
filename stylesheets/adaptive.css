@@ -17,7 +17,7 @@
   .suitcase {
     width: 95%;
     height: 40%;
-    top: 30%;
+    top: 27%;
   }
   .navigation {
     font-size: 5.5vw;
@@ -30,7 +30,7 @@
   }
   .logo {
     width: 89vw;
-    top: 102vw;
+    top: 96vw;
     left: 5.7vw;
   }
   /* 2 секция */
@@ -201,6 +201,9 @@
     width: 72vw;
     height: 110vw;
   }
+  .line {
+    height: clamp(2px, 0.3vw, 0.3vw);
+  }
   /* 6 секция */
   .endOfTheJourney {
     height: 227.6vw;
@@ -211,7 +214,7 @@
   }
   .text-block {
     white-space: wrap;
-    top: 30%;
+    top: 40%;
   }
   .desc {
     font-size: 5vw;

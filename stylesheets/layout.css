@@ -397,9 +397,10 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-
+  touch-action: none;
   transform: translate(-50%, -50%);
 }
+
 .number-circle {
   border-radius: 100%;
   padding: 1.3vw;
@@ -420,7 +421,7 @@ body {
 }
 .line {
   position: absolute;
-  height: clamp(1px, 0.3vw, 0.3vw);
+  height: clamp(1px, 0.25vw, 0.25vw);
   background-color: black;
   transform-origin: left center;
   pointer-events: none;
