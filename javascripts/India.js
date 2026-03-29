@@ -55,7 +55,6 @@ function showIndiaButtons() {
 
       setTimeout(() => {
         circle.style.display = 'none'
-        // здесь прописать появлене картинки индии
         india.classList.add('cover')
       }, 2000)
     }

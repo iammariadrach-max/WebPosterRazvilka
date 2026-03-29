@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-  // --- ТЕКСТЫ С HOOK ---
   const text1 = `
 Вы отправляетесь путешествовать по&nbsp;трём странам:
 <span class="indiaGap">Индии</span><span id="india-hook"></span>,
@@ -19,7 +18,6 @@ document.addEventListener('DOMContentLoaded', () => {
 <span class="sunGap">впечатления</span><span id="sun-hook"></span>.
 `
 
-  //   запуск Typed
   new Typed('#typed-output-1', {
     strings: [text1],
     typeSpeed: 30,
@@ -33,7 +31,6 @@ document.addEventListener('DOMContentLoaded', () => {
     contentType: 'html'
   })
 
-  //   функция показа стикера
   function show(selector) {
     const el = document.querySelector(selector)
     if (el && el.style.opacity !== '1') {

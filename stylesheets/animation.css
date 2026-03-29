@@ -21,3 +21,25 @@
     opacity: 1;
   }
 }
+
+.circle-blink {
+  animation: circleBlink 1s forwards steps(1);
+}
+
+@keyframes circleBlink {
+  20%,
+  40%,
+  60%,
+  80% {
+    background-color: black;
+    color: #aef261;
+  }
+  10%,
+  20%,
+  50%,
+  70%,
+  100% {
+    background-color: #aef261;
+    color: black;
+  }
+}

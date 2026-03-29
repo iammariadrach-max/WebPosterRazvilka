@@ -6,16 +6,6 @@
     <title>WebPosterRazvilka</title>
     <link rel="stylesheet" href="stylesheets/style.css" />
 
-    <!-- <script type="importmap">
-      {
-        "imports": {
-          "three": "https://unpkg.com/three@0.139.0/build/three.module.js",
-          "OrbitControls": "https://unpkg.com/three@0.139.0/examples/jsm/controls/OrbitControls.js",
-          "GLTFLoader": "https://unpkg.com/three@0.139.0/examples/jsm/loaders/GLTFLoader.js",
-          "RectAreaLightUniformsLib": "https://unpkg.com/three@0.139.0/examples/jsm/lights/RectAreaLightUniformsLib.js"
-        }
-      }
-    </script> -->
     <script type="importmap">
       {
         "imports": {
@@ -33,6 +23,8 @@
     <script defer src="javascripts/India.js"></script>
     <script defer src="javascripts/typed.js"></script>
     <script defer src="javascripts/China.js"></script>
+    <script defer src="javascripts/endOfTheJourney.js"></script>
+    <script defer src="javascripts/navigation.js"></script>
   </head>
   <body>
     <!-- 1 секция -->
@@ -41,8 +33,8 @@
         <p class="history">История путешествия</p>
         <div class="scrollText">
           <p class="IndiaText">Индия</p>
-          <p class="ChinaText">Китай</p>
           <p class="EgyptText">Египет</p>
+          <p class="ChinaText">Китай</p>
         </div>
       </div>
       <div class="suitcase"></div>
@@ -260,7 +252,7 @@
         из&nbsp;самых известных памятников древнего мира. Рядом находится
         Большой Сфинкс, символ загадочности цивилизации. Далее маршрут ведёт
         в&nbsp;Луксор, где&nbsp;расположен Карнакский храм&nbsp;— крупнейший
-        религиозный комплекс страны.
+        религиозный комплекс страны, впечатляет туристов ежедневно.
       </p>
       <div class="video-container">
         <video src="Egypt.webm" autoplay loop muted playsinline></video>
@@ -281,6 +273,41 @@
           <p>район Пудун</p>
         </div>
       </div>
+      <div class="numbers">
+        <div class="number-circle" id="circle_1">1</div>
+        <div class="number-circle" id="circle_2">2</div>
+        <div class="number-circle" id="circle_3">3</div>
+        <div class="number-circle" id="circle_4">4</div>
+        <div class="number-circle" id="circle_5">5</div>
+        <div class="number-circle" id="circle_6">6</div>
+        <div class="number-circle" id="circle_7">7</div>
+
+        <div class="line" id="line_1"></div>
+        <div class="line" id="line_2"></div>
+        <div class="line" id="line_3"></div>
+        <div class="line" id="line_4"></div>
+        <div class="line" id="line_5"></div>
+        <div class="line" id="line_6"></div>
+      </div>
     </section>
+    <!-- 6 секция -->
+    <section class="endOfTheJourney">
+      <img src="images/star.svg" class="star" alt="Логотип" />
+
+      <div class="text-block">
+        <p class="desc">ВАШЕ ПУТЕШЕСТВИЕ УСПЕШНО ЗАВЕРШИЛОСЬ!</p>
+      </div>
+
+      <div class="footer">
+        <div class="button button1"><p>Драч Мария</p></div>
+        <div class="button button2"><p>Б25ДЗ09</p></div>
+        <div class="button button3"><p>Кураторы</p></div>
+        <div class="button button4"><p>Зародина Дарья</p></div>
+        <div class="button button5"><p>Комкова Анна</p></div>
+      </div>
+    </section>
+
+    <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
+    <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
   </body>
 </html>

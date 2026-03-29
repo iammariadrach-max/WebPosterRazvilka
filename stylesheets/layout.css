@@ -6,18 +6,9 @@ body {
   font-family: 'Akzidenz-Grotesk Pro';
   background-color: black;
   position: relative;
+  overflow-x: hidden;
 }
 
-/* body::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-image: url('../images/maket.svg');
-  width: 100vw;
-  height: 375vw;
-  opacity: 0.2;
-} */
 /* 1 секция */
 .mascot {
   display: flex;
@@ -39,23 +30,25 @@ body {
 .scrollText {
   flex-direction: column;
   line-height: 2.2vw;
+  cursor: pointer;
 }
 
 .suitcase {
   position: absolute;
   width: 60%;
   height: 75%;
-  top: 7%;
-  left: 50%; /* центрируем по X */
-  transform: translateX(-50%); /* центр по середине */
+  top: 8%;
+  left: 50%;
+  transform: translateX(-50%);
   background: transparent;
   will-change: transform;
+  overflow: visible;
 }
 
 .logo {
   position: absolute;
   width: 60.4vw;
-  top: 20vw;
+  top: 21vw;
   left: 19.8vw;
 }
 
@@ -330,16 +323,14 @@ body {
   position: relative;
   background-color: #ff801f;
   display: flex;
-  padding: 0 3% 3% 3%;
+  padding: 0 3% 4% 3%;
 }
 .egyptText {
   color: #aef261;
-  /* font-size: 2.9vw; */
-  font-size: 3.5vw;
+  font-size: 3vw;
   line-height: 3.6vw;
   text-align: center;
   align-self: flex-end;
-  text-transform: uppercase;
   text-align: left;
 }
 .video-container {
@@ -370,7 +361,9 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   padding: 3%;
+  overflow: hidden;
 }
+
 .chinaText {
   width: 100%;
   display: flex;
@@ -387,6 +380,97 @@ body {
 }
 .bottomText {
   margin-top: auto;
+}
+
+.numbers {
+  width: 48vw;
+  height: 38vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+}
+.number-circle {
+  border-radius: 100%;
+  padding: 1.3vw;
+  color: #aef261;
+  width: 3.8vw;
+  height: 3.8vw;
+  position: absolute;
+  transition: all 5s linear;
+  z-index: 2;
+  font-size: 2.3vw;
+  font-weight: 400;
+  letter-spacing: -0.028vw;
+  background-color: black;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.line {
+  position: absolute;
+  height: clamp(1px, 0.3vw, 0.3vw);
+  background-color: black;
+  transform-origin: left center;
+  pointer-events: none;
+  z-index: 1;
+  transition: none;
+}
+
+/* 6 секция */
+.endOfTheJourney {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.star {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 2vw;
+  height: auto;
+}
+
+.text-block {
+  position: absolute;
+  right: 5vw;
+  top: 45%;
+  transform: translateY(-50%);
+  max-width: 70vw;
+  color: #000;
+  white-space: nowrap;
+}
+
+.desc {
+  font-size: 2vw;
+  opacity: 0.7;
+}
+
+.footer {
+  position: absolute;
+  bottom: 5vw;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 3.5vw;
+  opacity: 0;
+  z-index: 3;
+}
+
+.footer .button {
+  padding: 1.3vw 3vw;
+  font-size: 1.8vw;
+  background-color: #000;
+  color: #fff;
+  border-radius: 3vw;
+  transition: transform 0.3s;
 }
 
 .none {
