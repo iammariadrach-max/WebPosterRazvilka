@@ -1,0 +1,163 @@
+@media (max-width: 430px) {
+  /* body::after {
+    content: '';
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100vw;
+    height: 1339vw;
+    background-image: url(../images/maket430.svg);
+    opacity: 0.2;
+  } */
+  /* 1 секция */
+  .mascot {
+    height: 216.7vw;
+    padding: 9% 5% 5% 5%;
+  }
+  .suitcase {
+    width: 95%;
+    height: 40%;
+    top: 30%;
+  }
+  .navigation {
+    font-size: 5.6vw;
+  }
+  .historyContainer {
+    width: 4vw;
+  }
+  .scrollText {
+    line-height: 5.8vw;
+  }
+  .logo {
+    width: 89vw;
+    top: 102vw;
+    left: 5.7vw;
+  }
+  /* 2 секция */
+  .typedText {
+    height: 225vw;
+    padding: 5%;
+  }
+  .twoColums {
+    font-size: 5.5vw;
+    line-height: 7vw;
+  }
+  .firstColumn,
+  .secondColumn {
+    width: 60%;
+  }
+
+  .typedTextIndia,
+  .typedTextEgypt,
+  .typedTextChina,
+  .typedTextMaskot,
+  .typedTextWorld,
+  .typedTextLine,
+  .typedTextVase,
+  .typedTextWorld2,
+  .typedTextSun {
+    display: none;
+  }
+  .indiaGap,
+  .egyptGap,
+  .chinaGap,
+  .maskotGap,
+  .WorldGap,
+  .lineGap,
+  .vaseGap,
+  .world2Gap,
+  .sunGap {
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .secondColumn {
+    margin-top: auto;
+  }
+  /* 3 секция */
+  .India {
+    height: 220.2vw;
+    padding: 5%;
+  }
+  .India.cover {
+    background-image: url(../images/indiaMap430.svg);
+  }
+  .city {
+    border-radius: 4vw;
+    line-height: 7.5vw;
+    text-align: center;
+    font-size: 4.5vw;
+  }
+
+  .varanasi {
+    top: 40.9%;
+    left: 58%;
+    width: 27%;
+    height: 3.8%;
+  }
+  .howrahBridge {
+    top: 51.2%;
+    left: 59%;
+    width: 32%;
+    height: 3.8%;
+  }
+  .nandi {
+    top: 64.8%;
+    left: 44%;
+    width: 21%;
+    height: 3.8%;
+  }
+  .minkshiTemple {
+    top: 57.2%;
+    left: 10%;
+    width: 38%;
+    height: 3.8%;
+  }
+  .hawaMahal {
+    top: 44.1%;
+    left: 6.5%;
+    width: 31%;
+    height: 3.8%;
+  }
+  .tajMahal {
+    top: 33.7%;
+    left: 35.5%;
+    width: 34%;
+    height: 3.8%;
+  }
+  .varanasiImg {
+    width: 24.5%;
+    position: absolute;
+    top: 17%;
+    left: 70.5%;
+  }
+  .howrahBridgeImg {
+    width: 24.5%;
+    position: absolute;
+    top: 60.7%;
+    left: 71%;
+  }
+  .minkshiTempleImg {
+    width: 24.5%;
+    position: absolute;
+    top: 67%;
+    left: 5.5%;
+  }
+  .hawaMahalImg {
+    width: 24.5%;
+    position: absolute;
+    top: 34.5%;
+    left: 11.5%;
+  }
+  .tajMahalImg {
+    width: 24.5%;
+    position: absolute;
+    top: 6.7%;
+    left: 23.6%;
+  }
+  .nandiImg {
+    width: 24.5%;
+    position: absolute;
+    top: 80%;
+    left: 43%;
+  }
+}

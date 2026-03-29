@@ -120,12 +120,14 @@ body {
   left: 8.8vw;
   position: absolute;
   width: 3vw;
+  display: block;
 }
 .typedTextEgypt {
   top: 10vw;
   left: 8.6vw;
   position: absolute;
   width: 2.7vw;
+  display: block;
 }
 .typedTextChina {
   top: 12.5vw;
@@ -136,18 +138,21 @@ body {
   animation: fadeIn ease 1s;
   animation-fill-mode: forwards;
   animation-delay: 3.5s;
+  display: block;
 }
 .typedTextMaskot {
   top: 17vw;
   left: 12vw;
   position: absolute;
   width: 4.7vw;
+  display: block;
 }
 .typedTextWorld {
   top: 29.6vw;
   left: 10.2vw;
   position: absolute;
   width: 3.2vw;
+  display: block;
 }
 /* стикеры 2 текста */
 .typedTextLine {
@@ -155,24 +160,28 @@ body {
   left: 84vw;
   position: absolute;
   width: 5vw;
+  display: block;
 }
 .typedTextVase {
   top: 17.5vw;
   left: 93.5vw;
   position: absolute;
   width: 4vw;
+  display: block;
 }
 .typedTextWorld2 {
   top: 24.6vw;
   left: 93.3vw;
   position: absolute;
   width: 3.2vw;
+  display: block;
 }
 .typedTextSun {
   top: 5vw;
   left: 86vw;
   position: absolute;
   width: 3vw;
+  display: block;
 }
 /* 3 секция */
 .India {

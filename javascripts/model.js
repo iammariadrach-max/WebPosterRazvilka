@@ -94,7 +94,8 @@ function initThree() {
 
     const isMobile = window.innerWidth < 768
 
-    const rotationMultiplier = isMobile ? 2 : 6
+    // const rotationMultiplier = isMobile ? 2 : 6
+    const rotationMultiplier = isMobile ? 14 : 28
 
     if (pivot) {
       pivot.rotation.y = baseRotation + progress * Math.PI * rotationMultiplier
@@ -102,7 +103,7 @@ function initThree() {
       pivot.position.y = -progress * (isMobile ? 2 : 5)
     }
 
-    const distance = isMobile ? 0.2 : 2.5
+    const distance = isMobile ? 5 : 10
 
     modelContainer.style.transform = `translateX(-50%) translateY(${progress * window.innerHeight * distance}px)`
 
