@@ -20,13 +20,14 @@
     top: 27%;
   }
   .navigation {
-    font-size: 5.5vw;
+    font-size: 6vw;
   }
   .historyContainer {
     width: 4vw;
+    line-height: 6.2vw;
   }
   .scrollText {
-    line-height: 5.8vw;
+    line-height: 6.2vw;
   }
   .logo {
     width: 89vw;
@@ -193,9 +194,9 @@
     font-size: 5.5vw;
   }
   .number-circle {
-    width: 9.5vw;
-    height: 9.5vw;
-    font-size: 5vw;
+    width: 12vw;
+    height: 12vw;
+    font-size: 6vw;
   }
   .numbers {
     width: 72vw;
