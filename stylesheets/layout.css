@@ -479,7 +479,6 @@ body {
   background-color: #000;
   color: #fff;
   border-radius: 3vw;
-  transition: transform 0.3s;
 }
 
 .none {

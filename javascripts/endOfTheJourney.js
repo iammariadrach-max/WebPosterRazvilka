@@ -27,7 +27,7 @@ tl.fromTo(
 tl.to(
   '.text-block',
   {
-    top: '45%',
+    top: '30%',
     left: '50%',
     right: 'auto',
     transform: 'translate(-50%, -50%)',
@@ -81,15 +81,21 @@ gsap.fromTo(
 )
 gsap.fromTo(
   '.button4',
-  { y: '3vw', rotate: '5.02deg' },
-  { y: '3vw', rotate: '5.02deg', duration: 0.8, ease: 'power2.out', delay: 1.9 }
+  { y: '3vw', rotate: '-5.02deg' },
+  {
+    y: '3vw',
+    rotate: '-5.02deg',
+    duration: 0.8,
+    ease: 'power2.out',
+    delay: 1.9
+  }
 )
 gsap.fromTo(
   '.button5',
-  { y: '2vw', rotate: '16.74deg' },
+  { y: '2vw', rotate: '7deg' },
   {
     y: '2vw',
-    rotate: '16.74deg',
+    rotate: '7deg',
     duration: 0.8,
     ease: 'power2.out',
     delay: 2.0

@@ -20,7 +20,7 @@
     top: 30%;
   }
   .navigation {
-    font-size: 5.6vw;
+    font-size: 5.5vw;
   }
   .historyContainer {
     width: 4vw;
@@ -83,9 +83,9 @@
   }
   .city {
     border-radius: 4vw;
-    line-height: 7.5vw;
+    line-height: 7.8vw;
     text-align: center;
-    font-size: 4.5vw;
+    font-size: 4.1vw;
   }
 
   .varanasi {
@@ -109,7 +109,7 @@
   .minkshiTemple {
     top: 57.2%;
     left: 10%;
-    width: 38%;
+    width: 36%;
     height: 3.8%;
   }
   .hawaMahal {
@@ -121,7 +121,7 @@
   .tajMahal {
     top: 33.7%;
     left: 35.5%;
-    width: 34%;
+    width: 32%;
     height: 3.8%;
   }
   .varanasiImg {
@@ -139,25 +139,94 @@
   .minkshiTempleImg {
     width: 24.5%;
     position: absolute;
-    top: 67%;
+    top: 67.4%;
     left: 5.5%;
   }
   .hawaMahalImg {
     width: 24.5%;
     position: absolute;
-    top: 34.5%;
-    left: 11.5%;
+    top: 15.5%;
+    left: 5%;
   }
   .tajMahalImg {
     width: 24.5%;
     position: absolute;
-    top: 6.7%;
-    left: 23.6%;
+    top: 5.7%;
+    left: 37%;
   }
   .nandiImg {
     width: 24.5%;
     position: absolute;
     top: 80%;
     left: 43%;
+  }
+  .buttonCircles {
+    width: 51%;
+    height: 5.5%;
+    border-radius: 6vw;
+    line-height: 11vw;
+    font-size: 4.5vw;
+  }
+  .circle {
+    width: 8vw;
+    height: 8vw;
+  }
+  /* 4 секция */
+  .Egypt {
+    height: 200vw;
+    padding: 0 5% 9% 5%;
+  }
+  .egyptText {
+    font-size: 7vw;
+    line-height: 8.7vw;
+  }
+  .video-container video {
+    top: 9vw;
+  }
+  /* 5 секция */
+  .China {
+    height: 219vw;
+    padding: 5%;
+    background-image: url(../images/chinaMap430.svg);
+  }
+  .chinaText {
+    font-size: 5.5vw;
+  }
+  .number-circle {
+    width: 9.5vw;
+    height: 9.5vw;
+    font-size: 5vw;
+  }
+  .numbers {
+    width: 72vw;
+    height: 110vw;
+  }
+  /* 6 секция */
+  .endOfTheJourney {
+    height: 227.6vw;
+    padding: 5%;
+  }
+  .star {
+    width: 4.5vw;
+  }
+  .text-block {
+    white-space: wrap;
+    top: 30%;
+  }
+  .desc {
+    font-size: 5vw;
+    text-align: center;
+  }
+  .footer {
+    flex-wrap: wrap;
+    bottom: 12vw;
+    display: flex;
+    gap: 7vw;
+  }
+  .footer .button {
+    padding: 5.4vw 9vw;
+    font-size: 6vw;
+    border-radius: 9vw;
+    line-height: 3vw;
   }
 }
